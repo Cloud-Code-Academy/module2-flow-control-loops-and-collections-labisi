@@ -473,12 +473,22 @@ public with sharing class FlowControlLoopsCollections {
         // Iterate over the Map using a for loop
             // Check if the salary of the employee is more than 55000
                 // Add the employee to the list of high paid employees 
+                integer salaryToCheck = 55000;
                 
-               
-                    return highPaidEmployees;
+               // if (employeeSalaries.get(foundEmployee) > salaryToCheck) {
+                  //  highPaidEmployees.add(foundEmployee);
+               // }
+                for (string foundEmployee : employeeSalaries.keySet()) {
+                    if (employeeSalaries.get(foundEmployee) > 55000) {
+                       highPaidEmployees.add(foundEmployee);
+                    }
+                }
+                return highPaidEmployees;
                 
-        // Return the list of high paid employees
-         // Replace null with the variable you used to store the result
-    }
-
-}
+                // Return the list of high paid employees
+                 // Replace null with the variable you used to store the result
+            }
+        
+        }
+        
+        
