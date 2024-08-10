@@ -464,7 +464,7 @@ public with sharing class FlowControlLoopsCollections {
             employeeSalaries.put('Jane Smith', 60000);
             employeeSalaries.put('Sam Brown', 55000);
             employeeSalaries.put('Alice Johnson', 65000);
-            string employeeName = employeeSalaries;
+            
             
         // Initialize a list to store the names of high paid employees
             List<String> highPaidEmployees = new List<String>();
@@ -473,7 +473,7 @@ public with sharing class FlowControlLoopsCollections {
         // Iterate over the Map using a for loop
             // Check if the salary of the employee is more than 55000
                 // Add the employee to the list of high paid employees 
-                integer salaryToCheck = 55000;
+                
                 
                // if (employeeSalaries.get(foundEmployee) > salaryToCheck) {
                   //  highPaidEmployees.add(foundEmployee);
