@@ -28,14 +28,13 @@ public with sharing class FlowControlLoopsCollections {
      * @param y The second number.
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
-    public static String helloWorld(Integer x, Integer y) {
-        if (X == NULL || Y == NULL || X < Y) {
+     public static String helloWorld(Integer x, Integer y) {
+        if (x == null || y == null || x < y ) {
             return null;
-        }
-        else (X > Y) {
+        } else{
             return 'Hello World!';
-        }   
-}
+        }
+     }
 
     /**
      * Question 2
@@ -65,7 +64,7 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
-        Integer largestNum = null;
+        Integer largestNum;
          if (num1 == num2) {
             return num1;
          } elseif( num1 == null || num2 == null) {
@@ -90,8 +89,8 @@ public with sharing class FlowControlLoopsCollections {
      * @param a The number to check.
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
-    public static String checkNumber(Integer a) {
-        if (a == Null) {
+     public static String checkNumber(Integer a) {
+        if (a == null) {
            return null;
         } elseif (a < 0) {
            return 'Negative';
@@ -196,7 +195,7 @@ public with sharing class FlowControlLoopsCollections {
         // Return the result string
         return greeting;
          }
-    }
+    
 
     /**
      * Question 10
@@ -459,4 +458,4 @@ public with sharing class FlowControlLoopsCollections {
         // Return the list of high paid employees
         return highPaidEmployees; // Replace null with the variable you used to store the result
     }
-
+}
